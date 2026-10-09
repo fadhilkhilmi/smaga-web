@@ -47,9 +47,23 @@ export default async function DetailBerita({ params }) {
 
         <Link
           href="/berita"
-          className="mt-12 inline-block border-b border-gray-900 pb-1 text-sm font-medium"
+          className="
+    mt-12
+    inline-flex
+    items-center
+    gap-2
+    rounded-full
+    bg-[#001188]
+    px-7
+    py-3
+    font-semibold
+    text-white
+    transition
+    hover:bg-[#4F6ACA]
+  "
         >
-          ← Kembali ke Berita
+          Kembali ke Berita
+          <span aria-hidden="true">→</span>
         </Link>
       </article>
     </main>

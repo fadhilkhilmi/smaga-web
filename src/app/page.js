@@ -152,37 +152,86 @@ hover:bg-[#4F6ACA]
 
               <Link
                 href={`/berita/${daftarBerita[0].id}`}
-                className="text-sm font-medium text-gray-900 underline underline-offset-4"
+                className="
+    inline-flex
+    items-center
+    gap-2
+    rounded-full
+    bg-[#001188]
+    px-6
+    py-2.5
+    text-sm
+    font-semibold
+    text-white
+    transition
+    hover:bg-[#4F6ACA]
+  "
               >
-                Baca selengkapnya →
+                Baca selengkapnya
+                <span aria-hidden="true">→</span>
               </Link>
             </article>
 
             {/* BERITA LAINNYA */}
-            <div className="divide-y divide-gray-200">
+            <div className="grid gap-8">
               {daftarBerita.slice(1, 3).map((berita) => (
-                <article key={berita.id} className="py-6 first:pt-0">
-                  <p className="text-sm text-gray-500 mb-3">{berita.tanggal}</p>
+                <article key={berita.id} className="grid gap-5 md:grid-cols-3">
+                  {/* GAMBAR */}
+                  <div className="h-44 overflow-hidden bg-gray-100 md:col-span-1">
+                    <img
+                      src={berita.gambar || "/gerbang.jpg"}
+                      alt={berita.judul}
+                      className="
+            h-full
+            w-full
+            object-cover
+            transition
+            duration-500
+            hover:scale-105
+          "
+                    />
+                  </div>
 
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {/* INFORMASI */}
+                  <div className="md:col-span-2">
+                    <p className="mb-3 text-sm text-gray-500">
+                      {berita.tanggal}
+                    </p>
+
+                    <h3 className="mb-3 text-xl font-semibold text-gray-900">
+                      <Link
+                        href={`/berita/${berita.id}`}
+                        className="hover:text-blue-800"
+                      >
+                        {berita.judul}
+                      </Link>
+                    </h3>
+
+                    <p className="mb-5 leading-7 text-gray-600">
+                      {berita.ringkasan}
+                    </p>
+
                     <Link
                       href={`/berita/${berita.id}`}
-                      className="hover:text-blue-800"
+                      className="
+            inline-flex
+            items-center
+            gap-2
+            rounded-full
+            bg-[#001188]
+            px-5
+            py-2.5
+            text-sm
+            font-semibold
+            text-white
+            transition
+            hover:bg-[#4F6ACA]
+          "
                     >
-                      {berita.judul}
+                      Baca selengkapnya
+                      <span aria-hidden="true">→</span>
                     </Link>
-                  </h3>
-
-                  <p className="text-gray-600 leading-7 mb-4">
-                    {berita.ringkasan}
-                  </p>
-
-                  <Link
-                    href={`/berita/${berita.id}`}
-                    className="text-sm font-medium text-gray-900 underline underline-offset-4"
-                  >
-                    Baca selengkapnya →
-                  </Link>
+                  </div>
                 </article>
               ))}
             </div>

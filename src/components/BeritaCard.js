@@ -65,22 +65,22 @@ export default function BeritaCard({ berita }) {
         <Link
           href={`/berita/${berita.id}`}
           className="
-          inline-flex
-          items-center
-          gap-2
-          border-b
-          border-gray-900
-          pb-1
-          text-sm
-          font-medium
-          text-gray-900
-          transition
-          hover:border-blue-800
-          hover:text-blue-800
-          "
+    inline-flex
+    items-center
+    gap-2
+    rounded-full
+    bg-[#001188]
+    px-6
+    py-3
+    text-sm
+    font-semibold
+    text-white
+    transition
+    hover:bg-[#4F6ACA]
+  "
         >
           Baca selengkapnya
-          <span>→</span>
+          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </article>
