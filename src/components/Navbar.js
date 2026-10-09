@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScroll, setLastScroll] = useState(0);
+
+  const [openMenu, setOpenMenu] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
 
   useEffect(() => {
@@ -13,10 +15,8 @@ export default function Navbar() {
       const currentScroll = window.scrollY;
 
       if (currentScroll > lastScroll && currentScroll > 80) {
-        // scroll ke bawah
         setShowNavbar(false);
       } else {
-        // scroll ke atas
         setShowNavbar(true);
       }
 
@@ -38,83 +38,130 @@ export default function Navbar() {
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="mx-auto flex max-w-[1240px] items-center justify-between px-6 py-8">
+      <div className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-6 md:px-6 md:py-8">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 text-white">
           <img
             src="/logo1.png"
             alt="Logo SMA Negeri 3 Tegal"
-            className="h-12 w-12 object-contain"
+            className="h-10 w-10 md:h-12 md:w-12 object-contain"
           />
 
-          <span className="text-base font-semibold tracking-wide">
+          <span className="text-sm md:text-base font-semibold tracking-wide">
             SMAN 3 TEGAL
           </span>
         </Link>
 
-        {/* MENU */}
-        <div className="flex items-center gap-8 text-white text-base">
-          <Link href="/" className="hover:text-[#FFCC33] transition">
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex items-center gap-8 text-white">
+          <Link href="/" className="hover:text-[#FFCC33]">
             Home
           </Link>
 
           <div className="relative">
             <button
               onClick={() => setOpenProfile(!openProfile)}
-              className="flex items-center gap-2 hover:text-[#FFCC33] transition"
+              className="flex items-center gap-2 hover:text-[#FFCC33]"
             >
               Profil
               <span className="text-xs">▾</span>
             </button>
 
-            <div
-              className={`
-      absolute
-      left-0
-      top-full
-      mt-4
-      w-52
-      rounded-xl
-      bg-white
-      p-2
-      shadow-lg
-      transition-all
-      duration-200
-
-      ${openProfile ? "visible opacity-100" : "invisible opacity-0"}
-    `}
-            >
-              <Link
-                href="/about"
+            {openProfile && (
+              <div
                 className="
-                  block rounded-lg px-4 py-3
-                  text-gray-700
-                  hover:bg-gray-100
-                  hover:text-[#001188]
+                absolute
+                top-full
+                mt-4
+                w-52
+                rounded-xl
+                bg-white
+                p-2
+                shadow-lg
                 "
               >
+                <Link
+                  href="/about"
+                  className="block rounded-lg px-4 py-3 text-gray-700 hover:bg-gray-100"
+                >
+                  Tentang Sekolah
+                </Link>
+
+                <Link
+                  href="/about#visi"
+                  className="block rounded-lg px-4 py-3 text-gray-700 hover:bg-gray-100"
+                >
+                  Visi & Misi
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link href="/berita" className="hover:text-[#FFCC33]">
+            Berita
+          </Link>
+        </div>
+
+        {/* MOBILE BUTTON */}
+        <button
+          onClick={() => setOpenMenu(!openMenu)}
+          className="md:hidden text-white text-3xl"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      {openMenu && (
+        <div
+          className="
+          md:hidden
+          mx-5
+          rounded-xl
+          bg-white
+          p-4
+          shadow-xl
+          "
+        >
+          <Link href="/" className="block px-4 py-3 text-gray-700">
+            Home
+          </Link>
+
+          <button
+            onClick={() => setOpenProfile(!openProfile)}
+            className="
+            flex
+            w-full
+            justify-between
+            px-4
+            py-3
+            text-gray-700
+            "
+          >
+            Profil
+            <span>▾</span>
+          </button>
+
+          {openProfile && (
+            <div className="ml-4 border-l">
+              <Link href="/about" className="block px-4 py-3 text-gray-600">
                 Tentang Sekolah
               </Link>
 
               <Link
                 href="/about#visi"
-                className="
-                  block rounded-lg px-4 py-3
-                  text-gray-700
-                  hover:bg-gray-100
-                  hover:text-[#001188]
-                "
+                className="block px-4 py-3 text-gray-600"
               >
                 Visi & Misi
               </Link>
             </div>
-          </div>
+          )}
 
-          <Link href="/berita" className="hover:text-[#FFCC33] transition">
+          <Link href="/berita" className="block px-4 py-3 text-gray-700">
             Berita
           </Link>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
