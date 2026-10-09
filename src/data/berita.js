@@ -3,7 +3,7 @@ export const daftarBerita = [
     id: 4,
     judul: "GLANTARA: Semarak Lomba Hari Kemerdekaan SMA Negeri 3 Tegal",
     tanggal: "13 Agustus 2026",
-    gambar: "/GLANTARA.jpg",
+    gambar: "/17an.webp",
     ringkasan:
       "SMA Negeri 3 Kota Tegal sukses menyelenggarakan kegiatan GLANTARA dalam rangka memperingati Hari Kemerdekaan Indonesia ke-81.",
     isi:
@@ -37,7 +37,7 @@ export const daftarBerita = [
     id: 6,
     judul: "Peringatan Hari Batik Nasional di SMA Negeri 3 Tegal",
     tanggal: "2 Oktober 2025",
-    gambar: "/Hari-Batik.jpg",
+    gambar: "/Hari-Batik.webp",
     ringkasan:
       "SMA Negeri 3 Tegal memperingati Hari Batik Nasional dengan mengenakan batik sebagai bentuk apresiasi terhadap budaya Indonesia.",
     isi:
@@ -49,7 +49,7 @@ export const daftarBerita = [
   {
     id: 2,
     judul: "Pemilihan Ketua OSIS (Pilketos) SMA Negeri 3 Tegal",
-    tanggal: "2 Oktober 2025",
+    tanggal: "14 September 2026",
     gambar: "/Pilketos.jpg",
     ringkasan:
       "SMA Negeri 3 Tegal melaksanakan kegiatan Pemilihan Ketua OSIS sebagai sarana pembelajaran demokrasi bagi siswa.",
@@ -60,7 +60,7 @@ export const daftarBerita = [
     id: 3,
     judul: "Seraya 1448 H: Peringatan Maulid Nabi Muhammad ﷺ",
     tanggal: "5 September 2025",
-    gambar: "/Maulid-Nabi.jpg",
+    gambar: "/maulid-nabi.webp",
     ringkasan:
       "SMA Negeri 3 Tegal memperingati Maulid Nabi Muhammad ﷺ melalui kegiatan Seraya 1448 H sebagai momentum meneladani akhlak Rasulullah.",
     isi:
