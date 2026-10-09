@@ -1,61 +1,64 @@
 export const daftarBerita = [
   {
+    id: 4,
+    judul: "GLANTARA: Semarak Lomba Hari Kemerdekaan SMA Negeri 3 Tegal",
+    tanggal: "13 Agustus 2026",
+    gambar: "/17an.webp",
+    ringkasan:
+      "SMA Negeri 3 Kota Tegal sukses menyelenggarakan kegiatan GLANTARA dalam rangka memperingati Hari Kemerdekaan Indonesia ke-81.",
+    isi: "...",
+  },
+
+  {
     id: 1,
     judul: "SMAN 3 Tegal Gelar Kegiatan HUT Sekolah",
-    tanggal: "10 Oktober 2026",
+    tanggal: "10 Januari 2026",
     gambar: "/HUT-SMAGA.webp",
     ringkasan:
       "Kegiatan peringatan hari ulang tahun sekolah berlangsung dengan berbagai kegiatan positif melibatkan siswa dan warga sekolah.",
-    isi: "SMA Negeri 3 Tegal mengadakan berbagai kegiatan dalam rangka memperingati hari ulang tahun sekolah. Kegiatan tersebut menjadi sarana mempererat kebersamaan seluruh warga sekolah.",
-  },
-
-  {
-    id: 2,
-    judul: "Prestasi Siswa SMA Negeri 3 Tegal di Bidang Akademik",
-    tanggal: "2 Oktober 2026",
-    gambar: "/berita2.jpg",
-    ringkasan:
-      "Siswa SMA Negeri 3 Tegal berhasil meraih prestasi melalui berbagai kompetisi akademik.",
-    isi: "Prestasi siswa menjadi salah satu bukti komitmen sekolah dalam mendukung pengembangan kemampuan akademik peserta didik.",
-  },
-
-  {
-    id: 3,
-    judul: "Kegiatan Ekstrakurikuler SMAN 3 Tegal",
-    tanggal: "28 September 2026",
-    gambar: "/berita3.jpg",
-    ringkasan:
-      "Berbagai kegiatan ekstrakurikuler menjadi wadah pengembangan minat dan bakat siswa.",
-    isi: "Melalui kegiatan ekstrakurikuler, siswa dapat mengembangkan kreativitas, kerja sama, dan kemampuan nonakademik.",
-  },
-
-  {
-    id: 4,
-    judul: "Pelaksanaan Asesmen dan Kegiatan Pembelajaran",
-    tanggal: "20 September 2026",
-    gambar: "/berita4.jpg",
-    ringkasan:
-      "Kegiatan pembelajaran berlangsung dengan dukungan fasilitas dan tenaga pendidik sekolah.",
-    isi: "SMA Negeri 3 Tegal terus berupaya meningkatkan kualitas pembelajaran bagi seluruh peserta didik.",
+    isi: "...",
   },
 
   {
     id: 5,
-    judul: "Upacara Bendera dan Pembinaan Karakter Siswa",
-    tanggal: "5 September 2026",
-    gambar: "/berita5.jpg",
+    judul: "Upacara dan Apresiasi Hari Guru Nasional",
+    tanggal: "25 November 2025",
+    gambar: "/Hari-Guru.jpg",
     ringkasan:
-      "Kegiatan upacara menjadi bagian dari pembentukan karakter disiplin dan tanggung jawab siswa.",
-    isi: "Pembinaan karakter dilakukan melalui berbagai kegiatan rutin sekolah.",
+      "SMA Negeri 3 Tegal melaksanakan upacara peringatan Hari Guru Nasional sebagai bentuk penghormatan dan apresiasi kepada para guru.",
+    isi: "...",
   },
 
   {
     id: 6,
-    judul: "Kegiatan Sekolah Bersama Warga SMAN 3 Tegal",
-    tanggal: "1 September 2026",
-    gambar: "/berita6.jpg",
+    judul: "Peringatan Hari Batik Nasional di SMA Negeri 3 Tegal",
+    tanggal: "2 Oktober 2025",
+    gambar: "/Hari-Batik.webp",
     ringkasan:
-      "Berbagai kegiatan sekolah memperkuat hubungan antara siswa, guru, dan lingkungan sekolah.",
-    isi: "Kegiatan bersama menjadi salah satu cara membangun lingkungan sekolah yang positif.",
+      "SMA Negeri 3 Tegal memperingati Hari Batik Nasional dengan mengenakan batik sebagai bentuk apresiasi terhadap budaya Indonesia.",
+    isi: "...",
+  },
+
+  {
+    id: 2,
+    judul: "Pemilihan Ketua OSIS (Pilketos) SMA Negeri 3 Tegal",
+    tanggal: "14 September 2025",
+    gambar: "/Pilketos.jpg",
+    ringkasan:
+      "SMA Negeri 3 Tegal melaksanakan kegiatan Pemilihan Ketua OSIS sebagai sarana pembelajaran demokrasi bagi siswa.",
+    isi: "...",
+  },
+
+  {
+    id: 3,
+    judul: "Seraya 1448 H: Peringatan Maulid Nabi Muhammad ﷺ",
+    tanggal: "5 September 2025",
+    gambar: "/Maulid-Nabi.jpg",
+    ringkasan:
+      "SMA Negeri 3 Tegal memperingati Maulid Nabi Muhammad ﷺ melalui kegiatan Seraya 1448 H sebagai momentum meneladani akhlak Rasulullah.",
+    isi:
+      "SMA Negeri 3 Tegal menyelenggarakan kegiatan Maulid Nabi Muhammad ﷺ bertajuk Seraya 1448 H — Semarak Rayakan Akhlak Rasulullah yang Mulia.\n\n" +
+      "Kegiatan ini menjadi momentum bagi seluruh warga sekolah untuk mengenang keteladanan Rasulullah ﷺ serta menumbuhkan nilai-nilai akhlak mulia seperti kasih sayang, kepedulian, dan kebersamaan.\n\n" +
+      "Melalui peringatan ini, diharapkan seluruh peserta didik dapat menerapkan nilai keteladanan Rasulullah ﷺ dalam kehidupan sehari-hari serta menjadi pribadi yang berkarakter dan bermanfaat bagi sesama.",
   },
 ];

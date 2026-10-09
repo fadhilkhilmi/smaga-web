@@ -50,8 +50,10 @@ export default function VisiMisi() {
                   <span className="font-bold text-[#4F6ACA]">02</span>
 
                   <p>
-                    Menyelenggarakan kegiatan pembelajaran berkualitas dengan
-                    dukungan teknologi informasi.
+                    Menyelenggarakan kegiatan pembelajaran berkualitas,
+                    menanamkan kepedulian terhadap lingkungan dan nilai - nilai
+                    kependudukan, menyenangkan, didukung dengan TIK yang
+                    memadai.
                   </p>
                 </li>
 
@@ -59,8 +61,8 @@ export default function VisiMisi() {
                   <span className="font-bold text-[#4F6ACA]">03</span>
 
                   <p>
-                    Menyelenggarakan kegiatan sekolah yang mendukung pelestarian
-                    lingkungan hidup.
+                    Menyelenggarakan kegiatan sekolah yang mendukung upaya
+                    pelestarian lingkungan hidup.
                   </p>
                 </li>
 
@@ -68,8 +70,19 @@ export default function VisiMisi() {
                   <span className="font-bold text-[#4F6ACA]">04</span>
 
                   <p>
-                    Mengembangkan bakat dan minat peserta didik melalui kegiatan
-                    ekstrakurikuler.
+                    Menyelenggarakan Kegiatan Ekstrakurikuler yang Mampu
+                    Menumbuhkan bakat dan Minat Peserta Didik secara Optimal
+                    untuk meraih prestasi.
+                  </p>
+                </li>
+
+                <li className="flex gap-4">
+                  <span className="font-bold text-[#4F6ACA]">05</span>
+
+                  <p>
+                    Mengutamakan keteladanan seluruh warga sekolah untuk
+                    menumbuhkan rasa cinta dan bangga terhadap tanah air dan
+                    bangsa Indonesia.
                   </p>
                 </li>
               </ol>

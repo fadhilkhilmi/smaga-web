@@ -136,23 +136,30 @@ export default function AboutPage() {
 
               <ul className="space-y-3 leading-7 text-gray-700">
                 <li>
-                  • Menyelenggarakan pendidikan yang berkualitas dan
-                  berkarakter.
+                  • Menumbuhkan suasana sekolah yang religius dalam bersikap dan
+                  bertingkah laku.
                 </li>
 
                 <li>
-                  • Mengembangkan kemampuan akademik dan nonakademik peserta
-                  didik.
+                  • Menyelenggarakan kegiatan pembelajaran berkualitas,
+                  menanamkan kepedulian terhadap lingkungan dan nilai - nilai
+                  kependudukan, menyenangkan, didukung dengan TIK yang memadai.
                 </li>
 
                 <li>
-                  • Meningkatkan kreativitas serta pemanfaatan teknologi dalam
-                  pembelajaran.
+                  • Menyelenggarakan kegiatan sekolah yang mendukung upaya
+                  pelestarian lingkungan hidup.
                 </li>
 
                 <li>
-                  • Menciptakan lingkungan sekolah yang aman, nyaman, dan peduli
-                  lingkungan.
+                  • Menyelenggarakan Kegiatan Ekstrakurikuler yang Mampu
+                  Menumbuhkan bakat dan Minat Peserta Didik secara Optimal untuk
+                  meraih prestasi.
+                </li>
+                <li>
+                  • Mengutamakan keteladanan seluruh warga sekolah untuk
+                  menumbuhkan rasa cinta dan bangga terhadap tanah air dan
+                  bangsa Indonesia.
                 </li>
               </ul>
             </div>
