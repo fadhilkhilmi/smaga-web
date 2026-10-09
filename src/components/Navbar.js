@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScroll, setLastScroll] = useState(0);
+  const [openProfile, setOpenProfile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,30 +58,31 @@ export default function Navbar() {
             Home
           </Link>
 
-          <div className="group relative">
-            <button className="flex items-center gap-2 hover:text-[#FFCC33] transition">
+          <div className="relative">
+            <button
+              onClick={() => setOpenProfile(!openProfile)}
+              className="flex items-center gap-2 hover:text-[#FFCC33] transition"
+            >
               Profil
               <span className="text-xs">▾</span>
             </button>
 
             <div
-              className="
-                invisible
-                absolute
-                left-0
-                top-full
-                mt-4
-                w-52
-                rounded-xl
-                bg-white
-                p-2
-                opacity-0
-                shadow-lg
-                transition-all
-                duration-200
-                group-hover:visible
-                group-hover:opacity-100
-              "
+              className={`
+      absolute
+      left-0
+      top-full
+      mt-4
+      w-52
+      rounded-xl
+      bg-white
+      p-2
+      shadow-lg
+      transition-all
+      duration-200
+
+      ${openProfile ? "visible opacity-100" : "invisible opacity-0"}
+    `}
             >
               <Link
                 href="/about"
