@@ -30,6 +30,21 @@ export const daftarBerita = [
   },
 
   {
+    id: 7,
+    judul:
+      "Informasi Sistem Penerimaan Murid Baru (SPMB) SMAN 3 Tegal Tahun Ajaran 2026/2027",
+    tanggal: "18 Mei 2026",
+    gambar: "/spmb.jpeg",
+    ringkasan:
+      "Informasi Sistem Penerimaan Murid Baru (SPMB) SMAN 3 Tegal Tahun Ajaran 2026/2027 telah tersedia bagi calon peserta didik baru.",
+    isi:
+      "SMA Negeri 3 Tegal menyampaikan informasi mengenai Sistem Penerimaan Murid Baru (SPMB) Tahun Ajaran 2026/2027 bagi calon peserta didik baru.\n\n" +
+      "Informasi ini mencakup tahapan penerimaan murid baru mulai dari pengumuman SPMB, pengajuan akun, verifikasi dokumen, aktivasi akun, hingga proses pendaftaran dan pemilihan sekolah.\n\n" +
+      "Calon peserta didik dan orang tua dapat memperoleh informasi lengkap melalui laman resmi SPMB Jawa Tengah.\n\n" +
+      "SMA Negeri 3 Tegal mengimbau calon peserta didik untuk memperhatikan jadwal dan ketentuan yang berlaku agar proses pendaftaran berjalan dengan lancar.",
+  },
+
+  {
     id: 5,
     judul: "Upacara dan Apresiasi Hari Guru Nasional 2025",
     tanggal: "25 November 2025",
@@ -57,7 +72,7 @@ export const daftarBerita = [
       "Pada hari kedua, 14 Januari 2026, suasana perayaan semakin meriah dengan berbagai penampilan seperti Sinok Sitong SMAGA, Band SMAGA, pembagian doorprize, serta penampilan guest star yang menghibur seluruh peserta.\n\n" +
       "Puncak kegiatan FLAMORIA 2026 dilaksanakan pada 15 Januari 2026 melalui kegiatan tasyakuran, pembagian doorprize, dan pentas seni sebagai penutup rangkaian perayaan HUT SMA Negeri 3 Tegal ke-39.\n\n" +
       "Melalui kegiatan FLAMORIA 2026, SMA Negeri 3 Tegal terus memperkuat semangat kebersamaan, kreativitas, dan rasa bangga menjadi bagian dari keluarga besar SMAGA.",
-  }, 
+  },
 
   {
     id: 6,

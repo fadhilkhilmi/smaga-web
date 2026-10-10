@@ -115,9 +115,23 @@ hover:bg-[#4F6ACA]
 
             <Link
               href="/berita"
-              className="text-sm font-medium text-gray-800 border-b border-gray-800 pb-1 hover:text-blue-800"
+              className="
+    inline-flex
+    items-center
+    gap-2
+    rounded-full
+    bg-[#001188]
+    px-6
+    py-2.5
+    text-sm
+    font-semibold
+    text-white
+    transition
+    hover:bg-[#4F6ACA]
+  "
             >
-              Semua Berita →
+              Semua Berita
+              <span aria-hidden="true">→</span>
             </Link>
           </div>
 
