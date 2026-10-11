@@ -1,3 +1,6 @@
+Nama: Moh Fadhil Khilmi
+NIM: 2404140020
+
 # Website Profil SMA Negeri 3 Tegal
 
 ## Informasi Website
