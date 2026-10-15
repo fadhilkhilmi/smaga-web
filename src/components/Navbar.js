@@ -97,6 +97,14 @@ export default function Navbar() {
             )}
           </div>
 
+          <Link href="/guru" className="hover:text-[#FFCC33]">
+            Guru
+          </Link>
+
+          <Link href="/ekstrakurikuler" className="hover:text-[#FFCC33]">
+            Ekstrakurikuler
+          </Link>
+
           <Link href="/berita" className="hover:text-[#FFCC33]">
             Berita
           </Link>
@@ -156,6 +164,22 @@ export default function Navbar() {
               </Link>
             </div>
           )}
+
+          <Link
+            href="/guru"
+            onClick={() => setOpenMenu(false)}
+            className="block px-4 py-3 text-gray-700"
+          >
+            Guru
+          </Link>
+
+          <Link
+            href="/ekstrakurikuler"
+            onClick={() => setOpenMenu(false)}
+            className="block px-4 py-3 text-gray-700"
+          >
+            Ekstrakurikuler
+          </Link>
 
           <Link href="/berita" className="block px-4 py-3 text-gray-700">
             Berita

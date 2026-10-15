@@ -1,5 +1,4 @@
-import BeritaCard from "@/components/BeritaCard";
-import { daftarBerita } from "@/data/berita";
+import BeritaList from "@/components/BeritaList";
 
 export const metadata = {
   title: "Berita | SMA Negeri 3 Tegal",
@@ -58,12 +57,8 @@ export default function BeritaPage() {
           </p>
         </div>
 
-        {/* ENAM BERITA */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {daftarBerita.map((berita) => (
-            <BeritaCard key={berita.id} berita={berita} />
-          ))}
-        </div>
+        {/* DAFTAR BERITA */}
+        <BeritaList />
       </section>
     </main>
   );
