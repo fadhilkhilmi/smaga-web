@@ -3,7 +3,7 @@ export const guru = [
     id: 1,
     nama: "Istiana Herawati",
     jabatan: "Plt. Kepala Sekolah",
-    foto: "kepala-sekolah.jpg",
+    foto: "/kepala-sekolah.jpg",
   },
   {
     id: 2,
