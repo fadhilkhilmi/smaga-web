@@ -1,27 +1,27 @@
 export const guru = [
   {
     id: 1,
-    nama: "Nama Guru Pertama",
-    jabatan: "Guru Matematika",
-    foto: null,
+    nama: "Istiana Herawati",
+    jabatan: "Plt. Kepala Sekolah",
+    foto: "kepala-sekolah.jpg",
   },
   {
     id: 2,
-    nama: "Nama Guru Kedua",
-    jabatan: "Guru Bahasa Indonesia",
-    foto: null,
+    nama: "Warisi",
+    jabatan: "Plt. Kepala Tata Usaha",
+    foto: "Warisi.jpg",
   },
   {
     id: 3,
-    nama: "Nama Guru Ketiga",
+    nama: "Afniati",
     jabatan: "Guru Bahasa Inggris",
-    foto: null,
+    foto: "Afniati.jpg",
   },
   {
     id: 4,
-    nama: "Nama Guru Keempat",
-    jabatan: "Guru Biologi",
-    foto: null,
+    nama: "Dede Rusdianto",
+    jabatan: "Guru Penjasorkes",
+    foto: "Dede-Rusdianto.jpg",
   },
 
   // Tambahkan data sampai 76 guru
